@@ -105,7 +105,7 @@ window.app = new Vue ({
         this.momentClock();
         setInterval(this.momentClock, 1000);
         // make ajax reqeust
-        this.$http.get('/tv-schedule').then(response => {
+        this.$http.get('tv-schedule').then(response => {
             this.tvSchedule = response.data;
 
             if (this.dateSelected) {
